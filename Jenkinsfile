@@ -2,7 +2,7 @@ pipeline {
   agent any
   stages {
     stage('Git Pull'){
-      node(Node 1){
+      node('Node 1'){
         steps {
         //sh 'cd /home/centos/Git_Repos/TestProject'
         //sh label: '', script: 'cd /home/centos/Git_Repos/TestProject'

@@ -8,6 +8,7 @@ pipeline {
         //sh label: '', script: 'cd /home/centos/Git_Repos/TestProject'
         //cd /home/centos/Git_Repos/TestProject
         sh "pwd"
+        sh 'ls'
         //dir("/home/centos/Git_Repos/TestProject"){
         //  sh "pwd"
         //}

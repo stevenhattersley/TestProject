@@ -8,6 +8,7 @@ pipeline {
         cd /home/centos/Git_Repos/TestProject
         //sh 'git pull'
         //h label: '', script: 'git pull'
+        git pull
       }
     }
     stage('Build') {

@@ -6,11 +6,12 @@ pipeline {
         //sh 'cd /home/centos/Git_Repos/TestProject'
         //sh label: '', script: 'cd /home/centos/Git_Repos/TestProject'
         //cd /home/centos/Git_Repos/TestProject
+        sh "pwd"
         dir("/home/centos/Git_Repos/TestProject"){
           sh "pwd"
         }
         //sh 'git pull'
-        //h label: '', script: 'git pull'
+        //sh label: '', script: 'git pull'
         //git pull
       }
     }

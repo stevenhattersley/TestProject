@@ -2,10 +2,8 @@ pipeline {
   agent any
   stages {
     stage('Git Pull'){
-      node('node name'){
-        steps {
-          sh 'ls'
-        }
+      steps {
+        sh 'ls'
       }
     }
     stage('Build') {

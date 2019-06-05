@@ -1,9 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('myStage'){
+    stage('Git Pull'){
       steps {
-        sh 'ls -la' 
+        sh 'cd /home/centos/Git_Repos/TestProject'
+        sh 'git pull' 
       }
     }
     stage('Build') {

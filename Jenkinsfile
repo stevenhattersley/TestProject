@@ -7,7 +7,7 @@ pipeline {
         //sh label: '', script: 'cd /home/centos/Git_Repos/TestProject'
         //cd /home/centos/Git_Repos/TestProject
         dir("/home/centos/Git_Repos/TestProject"){
-          sh "git pull"
+          sh "pwd"
         }
         //sh 'git pull'
         //h label: '', script: 'git pull'

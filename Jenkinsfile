@@ -12,8 +12,7 @@ pipeline {
     stage('Run unit test script') {
       steps { 
         sh 'ls' 
-        sh '/usr/bin/python /opt/JenkinsTest/Unit.py'
-        //sh 'python ../Unit.py'
+        sh '/usr/bin/python /opt/JenkinsTest/Unit.py' / Works but puts results in working space
         //sh 'python /var/lib/jenkins/workspace/Unit.py' //Works but puts results in working space
         //sh 'python /var/lib/jenkins/workspace/Test_Pipeline_2_master/Unit.py' //This works
       }

@@ -6,7 +6,7 @@ pipeline {
     stage('Copy python files'){
       steps {
         //sh 'ls'
-        sh 'cp ./TestFile3 /opt/'
+        sh 'cp ./TestFile3 /opt/JenkinsTest'
       }
     }
     stage('Run unit test script') {

@@ -13,7 +13,8 @@ pipeline {
       steps { 
         sh 'ls' 
         //sh '/usr/bin/python /opt/JenkinsTest/Unit.py'
-        sh 'python ../Unit.py'
+        //sh 'python ../Unit.py'
+        sh 'python /var/lib/jenkins/workspace/Unit.py
       }
     }
   }

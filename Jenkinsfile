@@ -1,14 +1,18 @@
+// This file is run when thr Git repo changes.
+// The Git repo is auto pulled at /var/lib/jenkins/workspace/...pipeline_name...
 pipeline {
   agent any
   stages {
-    stage('Git Pull'){
+    stage('Copy python files'){
       steps {
-        sh 'ls'
+        //sh 'ls'
+        sh 'cp ./TestFile3 /opt/'
       }
     }
-    stage('Build') {
+    stage('Run unit test script') {
       steps { 
-        sh 'ls' 
+        //sh 'ls' 
+        sh 'python /opt/JenkinsTest/Unit.py'
       }
     }
   }

@@ -12,7 +12,7 @@ pipeline {
     stage('Run unit test script') {
       steps { 
         //sh 'ls' 
-        sh 'python /opt/JenkinsTest/Unit.py'
+        sh '/usr/bin/python /opt/JenkinsTest/Unit.py'
       }
     }
   }

@@ -14,8 +14,8 @@ pipeline {
         sh 'ls' 
         //sh '/usr/bin/python /opt/JenkinsTest/Unit.py'
         //sh 'python ../Unit.py'
-        //sh 'python /var/lib/jenkins/workspace/Unit.py'
-        sh 'python /var/lib/jenkins/workspace/Test_Pipeline_2_master/Unit.py'
+        sh 'python /var/lib/jenkins/workspace/Unit.py'
+        //sh 'python /var/lib/jenkins/workspace/Test_Pipeline_2_master/Unit.py' //This works
       }
     }
   }
